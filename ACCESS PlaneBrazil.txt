@@ -1,0 +1,5 @@
+USERNAME: leonardo
+DATABASE_PASSWORD=pTEetKtOySgpC9gU  
+DATABASE=mongodb+srv://leonardo:<PASSWORD>@cluster0.pnsxb.mongodb.net/PlaneBrazil?retryWrites=true&w=majority  
+
+

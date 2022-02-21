@@ -1,0 +1,23 @@
+AIRCRAFT:
+acftName
+maxRange
+maxSeats
+acftType
+price
+summary
+description
+imageCover
+images
+createAt
+geoLocation
+acftSeller
+
+
+APPS.JS cria as rotas para
+
+aircraft.routes que chama as rotinas no
+
+AircraftController que chama rotinas no
+
+handlerFactory
+
