@@ -2,8 +2,6 @@
    File: errorController.js
    Objective: Controller for
 */
-
-/* eslint-disable node/no-unsupported-features/es-syntax */
 const AppError = require('../utils/appError');
 
 const handleCastErrorDB = (err) => {
