@@ -6,7 +6,7 @@
     <Name>PlaneBrazil</Name>
     <RootNamespace>PlaneBrazil</RootNamespace>
     <Environment>
-</Environment>
+    </Environment>
     <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -33,9 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
-    <Content Include="config.env">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="config.env" />
     <Content Include="controllers\aircraftController.js">
       <SubType>Code</SubType>
     </Content>
