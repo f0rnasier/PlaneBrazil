@@ -83,6 +83,6 @@ const aircraftSchema = new mongoose.Schema(
 );
 
 
-const Aircraft = mongoose.model('Aircraft', aircraftSchema); /// cria a collections para ser usada usando o tourschema
+const Aircraft = mongoose.model('Aircraft', aircraftSchema);
 
 module.exports = Aircraft;

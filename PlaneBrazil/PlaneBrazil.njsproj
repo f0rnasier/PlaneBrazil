@@ -15,7 +15,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f9f55c6e-f351-47ea-9175-153e94f609c1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app-old.js</StartupFile>
+    <StartupFile>server.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
