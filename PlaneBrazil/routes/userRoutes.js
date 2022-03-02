@@ -19,6 +19,13 @@ router.use(authController.protect);
 
 router.get('/me', userController.getMe, userController.getUser);
 
+router.patch(
+    '/updateMe',
+    userController.UploadUserPhoto,
+    userController.resizeUserPhoto,
+    userController.updateMe
+);
+
 router.get('/', userController.getAllUsers);
 
 router
