@@ -70,7 +70,6 @@
     <Content Include="routes\users.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
-    <Content Include="README.md" />
     <Content Include="routes\viewRoutes.js">
       <SubType>Code</SubType>
     </Content>
@@ -109,6 +108,7 @@
   <ItemGroup>
     <Folder Include="controllers\" />
     <Folder Include="models\" />
+    <Folder Include="public\images\users\" />
     <Folder Include="utils\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />

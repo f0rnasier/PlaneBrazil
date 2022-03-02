@@ -14,11 +14,17 @@ router.post('/logout', authController.logout);
 router.post('/forgotpassword', authController.forgotPassword);
 router.patch('/resetpassword/:token', authController.resetPassword);
 
+// Protect all routes after this middleware
+router.use(authController.protect);
+
+router.get('/me', userController.getMe, userController.getUser);
+
 router.get('/', userController.getAllUsers);
 
-router.route('/:id').get(userController.getUser)
-    .delete(userController.deleteUser)
-    .patch(userController.UpdateUser);
-
+router
+  .route('/:id')
+  .get(userController.getUser)
+  .delete(userController.deleteUser)
+  .patch(userController.UpdateUser);
 
 module.exports = router;

@@ -28,8 +28,6 @@ const upload = multer({
 
 exports.UploadUserPhoto = upload.single('photo');
 
-exports.UploadUserPhoto = upload.single('photo');
-
 exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
     if (!req.file) return next();
 
@@ -39,11 +37,25 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
         .resize(500, 500)
         .toFormat('jpeg')
         .jpeg({ quality: 90 })
-        .toFile(`public/img/users/${req.file.filename}`);
+        .toFile(`public/imgages/users/${req.file.filename}`);
 
     next();
 });
-//
+
+// Get ME / Update ME / Delete ME operations
+const filterObj = (obj, ...allowedFields) => {
+    const newObj = {};
+    Object.keys(obj).forEach((el) => {
+        if (allowedFields.includes(el)) newObj[el] = obj[el];
+    });
+    return newObj;
+};
+
+exports.getMe = (req, res, next) => {
+    console.log(req.user.id);
+    req.params.id = req.user.id;
+    next();
+};
 
 // CRUD Operations via HandlerFactory
 exports.getAllUsers = factory.getAll(user);

@@ -41,6 +41,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Test Line
+app.use(express.json({ limit: '10kb' }));
+
 // Routes Definitions
 app.use('/', viewRouter);
 app.use('/api/v1/aircraft', aircraftRouter);
