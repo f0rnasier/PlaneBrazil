@@ -90,6 +90,15 @@ exports.updateMe = catchAsync(async (req, res, next) => {
 });
 
 // DELETE
+exports.deleteMe = catchAsync(async (req, res, next) => {
+    await user.findByIdAndUpdate(req.user.id, { active: false });
+
+    res.status(204).json({
+        status: 'success',
+        data: null,
+    });
+});
+
 
 // CRUD Operations via HandlerFactory
 exports.getAllUsers = factory.getAll(user);

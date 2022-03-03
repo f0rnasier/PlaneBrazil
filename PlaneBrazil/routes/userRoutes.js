@@ -26,6 +26,8 @@ router.patch(
     userController.updateMe
 );
 
+router.delete('/deleteMe', userController.deleteMe);
+
 router.get('/', userController.getAllUsers);
 
 router
