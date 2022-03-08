@@ -41,6 +41,7 @@
     <Content Include="controllers\authController.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="controllers\bookingController.js" />
     <Content Include="controllers\errorController.js">
       <SubType>Code</SubType>
     </Content>
@@ -57,6 +58,7 @@
     <Content Include="models\aircraftModel.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="models\bookingModel.js" />
     <Content Include="models\userModel.js">
       <SubType>Code</SubType>
     </Content>
