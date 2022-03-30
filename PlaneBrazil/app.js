@@ -29,7 +29,7 @@ const viewRouter = require('./routes/viewRoutes');
 const app = express();
 
 // View Engine Setup
-ap  set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // Development logging
